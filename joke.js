@@ -7,7 +7,7 @@ function fetchJoke() {
         headers: {
             'Accept': 'application/json'
         }
-    })
+    }) 
     .then(response => response.json())
     .then(data => {
         document.getElementById('joke').innerText = data.joke;
